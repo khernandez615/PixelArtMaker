@@ -9,7 +9,7 @@ $('#sizePicker').submit(function(event) {
 })
 //FUNCTION FOR MAKING THE GRID APPEAR
 function makeGrid(x, y) {
-    //CLEARS OUT GRID WHEN SUBMIT CLICKED
+    //RESETS GRID WHEN SUBMIT CLICKED
     $('tr').remove();
     //CODE FOR MAKING THE GRID 
     for (var i = 1; i <= x; i++) {
@@ -23,7 +23,7 @@ function makeGrid(x, y) {
         color = $('#colorPicker').val();
 
         if ($(this).attr('style')) {
-            $(this).removeAttr('style')
+            $(this).removeAttr('style');
         }
         else {
             $(this).attr('style', 'background-color:' + color);
