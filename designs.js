@@ -12,10 +12,10 @@ function makeGrid(x, y) {
     //RESETS GRID WHEN SUBMIT CLICKED
     $('tr').remove();
     //CODE FOR MAKING THE GRID 
-    for (var i = 1; i <= x; i++) {
-        $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
-        for (var j = 1; j <= y; j++) {
-            $('#table' + i).append('<td></td>');
+    for (var n = 1; n <= x; n++) {
+        $('#pixelCanvas').append('<tr id=table' + n + '></tr>');
+        for (var m = 1; m <= y; m++) {
+            $('#table' + n).append('<td></td>');
         }
     }
     //COLORING IN THE CELLS
